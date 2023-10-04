@@ -1,12 +1,12 @@
 <script setup>
 import Commute from '../components/Commute.vue'
-import { reactive } from 'vue'
+import { ref } from 'vue'
 import contentful from "@/modules/contentful.js"
 
-const commutes = reactive([]);
+const commutes = ref([]);
 
 (async () => {
-  commutes.push(...(await contentful.getCommutes()))
+  commutes.value.push(...(await contentful.getCommutes()))
 }
 )()
 </script>
