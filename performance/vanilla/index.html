@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>VanillaJS Performance example</title>
+    <meta name="description" content="A simple example for JavaScript performance testing">
+    <meta name="keywords" content="html performance">
+</head>
+
+<body>
+    <img id="image">
+</body>
+<script async>
+    for (let index = 0; index < 10000000; index++) {
+        document.querySelector("#image").src = `${index}.jpg`
+    }
+    document.querySelector("#image").src = "cat.jpg"
+
+</script>
+
+</html>

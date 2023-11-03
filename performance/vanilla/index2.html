@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>VanillaJS Performance example</title>
+    <meta name="description" content="A simple example for JavaScript performance testing">
+    <meta name="keywords" content="html performance">
+</head>
+
+<body>
+    <button id="cat-button">Show me the cat</button>
+    <button id="dog-button">Show me the dog</button>
+    <br>
+    <img id="image">
+</body>
+<script>
+    function showTheCat () {
+        for (let index = 0; index < 100000; index++) {
+            document.getElementById("image").src = `${index}.jpg`
+        }
+        document.querySelector("#image").src = "cat.jpg"
+    }
+    function showTheDog () {
+        document.querySelector("#image").src = "dog.jpg"
+    }
+    const el = document.getElementById("cat-button");
+    el.addEventListener("click", showTheCat);
+    const elDog = document.getElementById("dog-button");
+    elDog.addEventListener("click", showTheDog);
+
+
+
+
+</script>
+
+</html>
