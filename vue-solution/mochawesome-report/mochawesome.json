@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-11-14T09:08:32.562Z",
+    "end": "2023-11-14T09:08:51.118Z",
+    "duration": 18556,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "411d0a5b-cc61-4855-91d9-6c3b647015b3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\example.cy.js",
+      "file": "cypress\\e2e\\example.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "72037ab1-268c-4cbb-9d1e-da7722f07eaa",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "visits the app root url",
+              "fullTitle": "My First Test visits the app root url",
+              "timedOut": null,
+              "duration": 4601,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.contains('h1', 'You did it!');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'You did it!' within the selector: 'h1' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'You did it!' within the selector: 'h1' but never did.\n    at Context.eval (webpack://vue-solution/./cypress/e2e/example.cy.js:6:7)",
+                "diff": null
+              },
+              "uuid": "0e567b16-6645-4280-9a75-1d8d47e2ede6",
+              "parentUUID": "72037ab1-268c-4cbb-9d1e-da7722f07eaa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0e567b16-6645-4280-9a75-1d8d47e2ede6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4601,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ef21c18d-7d21-46fc-b501-2192b5311355",
+          "title": "Searching for Maria Husmann should provide a link to the correct profile page as the first search result.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Searching for Maria Husmann should provide a link to the correct profile page as the first search result. passes",
+              "timedOut": null,
+              "duration": 11967,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://hslu.ch/');\ncy.get('input[placeholder=\"Suchbegriff eingeben\"]').type(\"Maria Husmann\");\ncy.get('#submit-sitesearch').click();\ncy.get('#fl li:first-of-type a').click();\ncy.get('h1 span').contains('Maria');\ncy.get('h1 span').contains('Husmann');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#fl li:first-of-type a`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#fl li:first-of-type a`, but never found it.\n    at Context.eval (webpack://vue-solution/./cypress/e2e/example.cy.js:16:7)",
+                "diff": null
+              },
+              "uuid": "b4955a16-b038-400a-a6dd-40d724e767a8",
+              "parentUUID": "ef21c18d-7d21-46fc-b501-2192b5311355",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b4955a16-b038-400a-a6dd-40d724e767a8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11967,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

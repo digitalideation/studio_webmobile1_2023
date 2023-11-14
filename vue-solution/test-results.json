@@ -1,0 +1,77 @@
+{
+  "numTotalTestSuites": 4,
+  "numPassedTestSuites": 4,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 4,
+  "numPassedTests": 4,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1699951966699,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Commute"
+          ],
+          "fullName": " Commute renders text",
+          "status": "passed",
+          "title": "renders text",
+          "duration": 2,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Commute"
+          ],
+          "fullName": " Commute renders image",
+          "status": "passed",
+          "title": "renders image",
+          "duration": 6,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1699951967669,
+      "endTime": 1699951967677,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/JumpStart/HSLU_switch_drive/STUWE1/2023/studio_webmobile1_2023/vue-solution/src/components/__tests__/Commute.spec.js"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "contentful commutes"
+          ],
+          "fullName": " contentful commutes gets least one commute",
+          "status": "passed",
+          "title": "gets least one commute",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "contentful commutes"
+          ],
+          "fullName": " contentful commutes commutes have correct structure",
+          "status": "passed",
+          "title": "commutes have correct structure",
+          "duration": 1,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1699951968063,
+      "endTime": 1699951968065,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/JumpStart/HSLU_switch_drive/STUWE1/2023/studio_webmobile1_2023/vue-solution/src/modules/__tests__/contentful.spec.js"
+    }
+  ]
+}
