@@ -14,7 +14,6 @@ class Contentful {
             .getEntries({
                 content_type: "commute"
             });
-        console.log(result.items);
         return result.items;
     }
 
